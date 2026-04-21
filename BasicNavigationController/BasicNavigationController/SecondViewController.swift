@@ -9,8 +9,14 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
+    @IBOutlet weak var messageLabel: UILabel!
+    
+    var  receivedMessage: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Second Screen"
+        title = "Message Received"
+        messageLabel.text = receivedMessage
+        
     }
 }
